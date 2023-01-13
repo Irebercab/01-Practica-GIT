@@ -8,23 +8,23 @@ public class Matematicas {
 			System.out.println("El número es par");
 		else
 			System.out.println("El número es impar");
-	}
-
-	public static boolean esPar(int numero) {
-		if (numero % 2 == 0) return true;
-		else return false;
-	}
 
 
-	public static boolean esDivisiblePorTres(int numero) {
-		if (numero % 3 == 0)
-			return true;
-		return false;
-	}
+		boolean esDivisiblePorTres =
+				Matematicas.esDivisiblePorTres(numero);
+		if (esDivisiblePorTres)
+			System.out.println("El número introducido es divisible entre tres");
+		else
+			System.out.println("El número introducido no es divisible entre tres");
 
-	public static boolean esDivisiblePorCinco(int numero) {
-		if (numero % 5 == 0)
-			return true;
-		return false;
+
+		boolean esDivisiblePorCinco =
+				Matematicas.esDivisiblePorCinco(numero);
+
+		if (esDivisiblePorCinco)
+			System.out.println("El número introducido es divisible entre cinco");
+		else
+			System.out.println("El número introducido no es divisible entre cinco");
+
 	}
 }
